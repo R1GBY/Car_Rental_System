@@ -27,7 +27,7 @@ public class yeni_kullanici extends JFrame{
             String myDriver = "com.mysql.cj.jdbc.Driver";
             String myUrl = "jdbc:mysql://localhost:3306/mysql?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
             Class.forName(myDriver);
-            con = DriverManager.getConnection(myUrl, "root", "Umut1234!");
+            con = DriverManager.getConnection(myUrl, "root", "password");
 
             // the mysql insert statement
             String query = " insert into sys.kullanicilar (kullanicilar, sifreler)" //verileri yerleştireceğimiz yerin sql sorgusu
