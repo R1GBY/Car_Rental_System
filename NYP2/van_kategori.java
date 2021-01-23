@@ -60,7 +60,7 @@ public class van_kategori extends JFrame {
             //Statement myStart = (Statement) myConn.createStatement();
             Class.forName("com.mysql.cj.jdbc.Driver");
             //Connection conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/new_schma","root","denizalt123");
-            java.sql.Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","root","Umut1234!");
+            java.sql.Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","root","password");
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery("select * from sys.van");
             while (rs.next()) {
